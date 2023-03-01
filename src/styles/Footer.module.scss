@@ -1,0 +1,61 @@
+@import "./globals.scss";
+
+.container {
+  background: $horizontal-gradient;
+  font-family: "Poppins";
+}
+
+.contact-btn {
+  @include button-styles(contact-orange);
+}
+
+.login-btn {
+  @include button-styles(login);
+  border: 1px solid $main-orange;
+}
+
+.text {
+  font-family: Poppins;
+  font-size: 19px;
+  line-height: 29px;
+  letter-spacing: 0em;
+}
+
+.link {
+  color: white;
+}
+
+.link:hover,
+.ul-no-bullets li a:hover {
+  color: white;
+  opacity: 0.7;
+}
+
+.ul-no-bullets {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ul-no-bullets li {
+  opacity: 0.7;
+}
+
+.ul-no-bullets li a {
+  color: white;
+  text-decoration: none;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 55px;
+}
+
+.description {
+  font-size: 19px;
+  line-height: 28px;
+}
+
+@media (min-width: 768px) {
+}

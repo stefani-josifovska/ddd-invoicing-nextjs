@@ -1,0 +1,26 @@
+@import "./globals.scss";
+
+.title {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0em;
+}
+
+.text {
+  @extend .blue-text;
+}
+
+.container {
+  box-shadow: $card-shadow;
+  border-radius: $cards-radius;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex: 1;
+    flex-shrink: 1;
+  }
+}

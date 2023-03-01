@@ -1,0 +1,87 @@
+@import "./globals.scss";
+
+.container {
+  background: transparent;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  transition: background-color 0.3s ease;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.gradient {
+  background: $dark-blue;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  transition: background-color 0.3s ease;
+}
+
+.menu-content {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+.menu-content li {
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-content li:hover {
+  transform: scale($standard-scale);
+}
+
+.menu-content li a {
+  color: white !important;
+  text-decoration: none;
+}
+
+.burger-icon {
+  color: $main-orange;
+  font-size: 2rem;
+  width: fit-content;
+}
+
+.mobile-menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: $gradient;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu-container ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.mobile-menu-container ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.mobile-menu-close-icon {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.mobile-menu-close-icon:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}

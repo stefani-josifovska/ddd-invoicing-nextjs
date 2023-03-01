@@ -1,0 +1,9 @@
+@import "./globals";
+
+.contact-btn {
+  @include button-styles(contact);
+}
+
+.login-btn {
+  @include button-styles(login);
+}

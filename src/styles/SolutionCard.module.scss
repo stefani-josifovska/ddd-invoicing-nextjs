@@ -1,0 +1,56 @@
+@import "./globals";
+
+.category {
+  @extend .category-span;
+}
+
+.subtitle {
+  @extend .subtitle-h2;
+}
+
+.btn {
+  @include button-styles(contact-orange);
+}
+
+.container {
+  box-shadow: $card-shadow;
+  border-radius: $cards-radius;
+}
+
+.container-blue {
+  background-color: #155f85;
+  color: white;
+  border-bottom-left-radius: $cards-radius;
+  border-bottom-right-radius: $cards-radius;
+}
+
+.text-alignment {
+  text-align: center;
+}
+
+.button {
+  width: fit-content;
+}
+
+.text {
+  @extend .blue-text;
+}
+
+.description {
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  color: #435288;
+}
+
+@media (min-width: 786px) {
+  .text-alignment {
+    text-align: left;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

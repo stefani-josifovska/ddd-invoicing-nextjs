@@ -1,0 +1,43 @@
+@import "./globals";
+
+.category {
+  @extend .category-span;
+  text-align: center;
+}
+
+.subtitle {
+  @extend .subtitle-h2;
+  text-align: center;
+}
+
+.btn {
+  @include button-styles(contact-orange);
+}
+
+.orange-span {
+  color: $main-orange;
+}
+
+.code-container {
+  background-color: #0a0f24;
+  color: white;
+  border-radius: $cards-radius;
+}
+
+.text {
+  @extend .blue-text;
+}
+
+.btn {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .subtitle {
+    text-align: left;
+  }
+
+  .category {
+    text-align: left;
+  }
+}

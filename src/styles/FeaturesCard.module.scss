@@ -1,0 +1,24 @@
+@import "./globals.scss";
+
+.container {
+  border-radius: $cards-radius;
+  box-shadow: $card-shadow;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.btn {
+  @include button-styles(contact-orange);
+}
+
+.title {
+  @extend .subtitle-h3;
+}
+
+.subtitle {
+  @extend .subtitle-orange;
+}
+
+.text {
+  @extend .blue-text;
+}
